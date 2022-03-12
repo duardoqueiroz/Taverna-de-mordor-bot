@@ -15,7 +15,7 @@ class DiscordBot
 
   public function start()
   {
-    print("Rodando");
+    print("Rodandoooo");
     $this->client->run();
   }
 }
