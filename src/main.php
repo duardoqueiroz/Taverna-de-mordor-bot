@@ -6,9 +6,10 @@ use Dotenv\Dotenv;
 
 function main()
 {
-  $dotenv = Dotenv::createImmutable(__DIR__);
+  $dotenv = Dotenv::createUnsafeImmutable(__DIR__);
   $dotenv->load();
-  $client = new Discord([$_ENV["DISCORD_TOKEN"]]);
+  $config = ['token'=>$_ENV["DISCORD_TOKEN"]];
+  $client = new Discord($config);
   $bot = new DiscordBot($client);
   $bot->start();
 }
