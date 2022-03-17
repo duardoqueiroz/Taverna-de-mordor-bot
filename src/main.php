@@ -1,8 +1,9 @@
 <?php
 
 use Discord\Discord;
-use TavernaDeMordor\Bot\Core\DiscordBot;
+
 use Dotenv\Dotenv;
+use TavernaDeMordor\Bot\Php\Core\DiscordBot;
 
 function main()
 {
